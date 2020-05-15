@@ -1,0 +1,15 @@
+<i id='totopbtn' class="fa fa-arrow-up"></i>
+
+<script>
+	$(document).ready(function(){
+		$('#totopbtn').click(function(){$(document).scrollTop(0)})
+
+		$(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+            $('#totopbtn').show().fadeIn();
+        } else {
+            $('#totopbtn').fadeOut().hide();
+        }
+    });
+    })
+</script>
